@@ -1,0 +1,157 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: hsl(0, 0%, 20%);
+    }
+    .theme {
+        filter: invert(100%);
+    }
+    h1,h2,h3,p {
+        color: hsl(0, 0%, 100%);
+    }
+    a {
+        color: hsl(0, 0%, 80%);
+    }
+}
+@media (prefers-color-scheme: light) {
+    a {
+        color: hsl(0, 0%, 20%);
+    }
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    image-rendering: pixelated;
+}
+::selection {
+    background-color: rgba(0, 0, 0, 0);
+    color: gray;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    text-size-adjust: none;
+}
+h1,h2,h3,p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    transition: 0.1s all;
+}
+a img {
+    border: 0;
+    outline: 0;
+}
+a:hover {
+    color: rgb(100, 100, 100);
+}
+a:active {
+    color: rgb(70, 70, 70);
+}
+img {
+    border: none;
+}
+div {
+    margin: 0;
+}
+.main {
+    position: absolute;
+    top:6%;
+    left: 4%;
+    z-index: 10;
+    max-width: 320px;
+}
+.logo {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    z-index: 15;
+    animation: appear 2s ease-out;
+}
+.undertitle {
+    position: relative;
+    bottom: -32px;
+    text-align: start;
+}
+.black-box {
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    background-color: black;
+    z-index: 12;
+    border-radius: 24px;
+}
+.national {
+    width: 100%;
+    height: 24px;
+    background-image: url(/assets/images/flags.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: slide 180s linear infinite;
+}
+.copyright {
+    position: fixed;
+    bottom:0;
+    left:0;
+    margin: 16px;
+    font-size: 20px;
+}
+.menu {
+    position: absolute;
+    z-index: 1;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    border-radius: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: appear2 2s ease-in-out 1;
+}
+.theme {
+    position: fixed;
+    animation: spin 4s linear infinite reverse;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-36px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    to {
+        background-position: var(--lenght) 0;
+    }
+}
+@keyframes appear2 {
+    from {
+        scale: 1 0;
+        z-index: 0;
+    }
+    to {
+        scale: 1 1;
+        z-index: 1;
+    }
+}
+@keyframes spin {
+    to {
+        rotate: 360deg;
+    }
+}

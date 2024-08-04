@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="icon" href="/assets/images/favicon.svg">
+        <title>SrFox's Projects.</title>
+    </head>
+    <body>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            h2, p {
+                text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+            }
+            main {
+                position: relative;
+                display: block;
+                margin: 0 20px 40px;
+                margin-left: calc(20px + env(safe-area-inset-left));
+                margin-right: calc(20px + env(safe-area-inset-right));
+            }
+            main ul {
+                max-width: 1080px;
+                margin: 0 auto
+            }
+            main li {
+                width: 20%;
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                margin: 15px 0;
+            }
+            main a .icon img {
+                box-shadow: 0 12px 40px 0 rgba(0,0,0,0.2);
+            }
+            main a:hover .icon img {
+                transform: translateY(-4px);
+                box-shadow: 0 16px 40px 0 rgba(0,0,0,0.5);
+            }
+            main a:active .icon img {
+                transform: translateY(4px);
+                box-shadow: none;
+            }
+            .icon {
+                padding: 20px;
+            }
+            .icon img {
+                display: block;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                border-radius: 20%;
+                -ms-interpolation-mode: bicubic;
+                -webkit-user-select: none;
+                user-select: none;
+                transition: transform 100ms ease-out,box-shadow 100ms ease-out;
+                will-change: transform,box-shadow;
+            }
+            .text {
+                width: 100%;
+                padding: 8px 10px 5px;
+            }
+        </style>
+        <img src="/assets/images/srfoxsprojects.svg" draggable="false" style="width: 600px;">
+        <h2>A place, which have projects.</h2>
+        <h2>Место, где есть проекты.</h2>
+            <main><ul>
+                <li>
+                    <a href="https://srfox100.github.io/NeaveTv/" target="_blank">
+                        <div class="icon">
+                            <img src="/assets/images/colorBar.jpg" draggable="false">
+                        </div>
+                        <div class="text">
+                            <h2>Neave.tv Revival.</h2>
+                            <p>A television without context, revived by SrFox.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/Xnd8w2vVrG" target="_blank">
+                        <div class="icon">
+                            <img src="/assets/images/facelogo.png" draggable="false">
+                        </div>
+                        <div class="text">
+                            <h2>Discord server</h2>
+                            <p>Russian server, join us! Please if you from russia...</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/SrFox100" target="_blank">
+                        <div class="icon">
+                            <img src="/assets/images/githublogo.png" draggable="false" style="background-color: hsl(0, 0%, 20%);">
+                        </div>
+                        <div class="text">
+                            <h2>GitHub account.</h2>
+                            <p>Discover my account with familar repositories.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://scratch.mit.edu/users/SeniorFOX/" target="_blank">
+                        <div class="icon">
+                            <img src="/assets/images/smile.gif" draggable="false">
+                        </div>
+                        <div class="text">
+                            <h2>Scratch profile.</h2>
+                            <p>My profile, which have a lot of projects.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon">
+                            <img src="/assets/images/glitchserver.png" draggable="false">
+                        </div>
+                        <div class="text">
+                            <h2>Serversity.</h2>
+                            <p>Coming soon... So wait for it.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <a href="/index.html">
+            <img src="/assets/images/favicon.svg" style="width: 36px; margin-bottom: -1px; top: 36px; right: 36px;" class="theme">
+        </a>
+    </body>
+</html>
