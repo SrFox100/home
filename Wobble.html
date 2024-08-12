@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="icon" href="/assets/images/favicon.svg">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="icon" href="./assets/images/favicon.svg">
         <title>Wobble.</title>
     </head>
     <body>
@@ -18,13 +18,14 @@
                 transition: 0.3s ease;
             }
             canvas {
+                height: 100%;
                 cursor: pointer;
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
             }
         </style>
-        <a href="/index.html">
-            <img src="/assets/images/favicon.svg" style="width: 36px; margin-bottom: -1px; top: 36px; right: 36px; z-index: 10;" class="theme">
+        <a href="./index.html">
+            <img src="./assets/images/favicon.svg" style="width: 36px; margin-bottom: -1px; top: 36px; right: 36px; z-index: 10;" class="theme">
         </a>
         <canvas></canvas>
         <script>
