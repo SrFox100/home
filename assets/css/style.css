@@ -46,6 +46,7 @@ ul {
 }
 li {
     margin: 0;
+    color: white;
 }
 a {
     text-decoration: none;
@@ -125,6 +126,9 @@ div {
 .theme {
     position: fixed;
     animation: spin 4s linear infinite reverse;
+}
+.important {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 @keyframes appear {
     from {
