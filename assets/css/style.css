@@ -99,7 +99,7 @@ div {
 .national {
     width: 100%;
     height: 24px;
-    background-image: url(/assets/images/flags.png);
+    background-image: url(../images/flags.png);
     background-size: cover;
     background-repeat: repeat-x;
     animation: slide 180s linear infinite;
