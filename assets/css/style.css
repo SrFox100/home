@@ -5,7 +5,7 @@
     .theme {
         filter: invert(100%);
     }
-    h1,h2,h3,p {
+    h1,h2,h3,p,li {
         color: hsl(0, 0%, 100%);
     }
     a {
@@ -46,7 +46,6 @@ ul {
 }
 li {
     margin: 0;
-    color: white;
 }
 a {
     text-decoration: none;
