@@ -58,8 +58,8 @@
                 mouseOff = -1000,
                 mouseX,
                 mouseY,
-                viscosity = 25,
-                damping = 0.1,
+                viscosity = 20,
+                damping = 0.2,
                 totalPoints,
                 dist,
                 scale,
@@ -242,7 +242,7 @@
                 canvas.style.height = innerHeight + 'px';
 
                 totalPoints = Math.round(Math.clamp(Math.pow(Math.random() * 8, 2), 16, innerWidth / 35));
-                dist = Math.clamp(innerWidth / 4, 150, 200);
+                dist = Math.clamp(innerWidth / 1, 150, 200);
 
                 for (var i = surfaces.length; i--; ) {
                     surfaces[i].resize();

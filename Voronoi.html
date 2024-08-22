@@ -549,7 +549,7 @@
             }
 
             function resize() {
-                scale = 1; // window.devicePixelRatio || 1;
+                scale = 2; // window.devicePixelRatio || 1;
 
                 canvas.width = innerWidth * scale;
                 canvas.height = innerHeight * scale;
@@ -580,13 +580,13 @@
                 canvas.ontouchmove = canvas.ontouchstart = function(event) {
                     mouseX = event.targetTouches[0].pageX * scale;
                     mouseY = event.targetTouches[0].pageY * scale;
-                    followDist = 800;
+                    followDist = 1;
                     event.preventDefault();
                 };
 
                 canvas.ontouchend = function(event) {
                     mouseX = mouseY = undefined;
-                    followDist = 300;
+                    followDist = 0;
                     for (var i = totalVertices; i--; ) {
                         var vertex = vertices[i];
                         vertex.vx += (Math.random() - 0.5) * 50;
@@ -606,12 +606,12 @@
                 };
 
                 canvas.onmousedown = function() {
-                    followDist = 800;
+                    followDist = 1;
                 };
 
                 canvas.onmouseup = function() {
                     mouseX = mouseY = undefined;
-                    followDist = 300;
+                    followDist = 0;
                     for (var i = totalVertices; i--; ) {
                         var vertex = vertices[i];
                         vertex.vx += (Math.random() - 0.5) * 100;
