@@ -135,6 +135,19 @@ div {
 .important {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.neave-like {
+    position: absolute;
+    filter: drop-shadow(0 0 1px white);
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    background-image: #00000000;
+    background-size: 100% 400%;
+    animation: rainb 8s linear infinite;
+}
+.neave-like:hover {
+    filter: drop-shadow(0 0 3px white);
+    background-image: linear-gradient(to bottom, #9cf , #f9c , #fc9 , #9fc, #9cf);
+}
 @keyframes appear {
     from {
         opacity: 0;
@@ -162,5 +175,21 @@ div {
 @keyframes spin {
     to {
         rotate: 360deg;
+    }
+}
+@keyframes rainb {
+    to {
+        background-position: 0 400%;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

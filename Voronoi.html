@@ -23,7 +23,7 @@
             }
         </style>
         <a href="./index.html">
-            <img src="./assets/images/favicon.svg" style="width: 36px; margin-bottom: -1px; top: 36px; right: 36px;" class="theme">
+            <img src="./assets/images/favicon.svg" style="width: 44px; margin-bottom: -1px; top: 36px; right: 36px;" class="theme">
         </a>
         <canvas></canvas>
         <script>
@@ -464,7 +464,7 @@
                     sa = Math.sin(angle);
 
                     if (d < followDist) {
-                        a = (1 - (d / followDist)) * canvas.width * 0.001;
+                        a = (1 - (d / followDist)) * canvas.width * 0.0005;
                         vx -= ca * (a + Math.random() * 8 - 4);
                         vy -= sa * (a + Math.random() * 8 - 4);
                     }
@@ -549,7 +549,7 @@
             }
 
             function resize() {
-                scale = 2; // window.devicePixelRatio || 1;
+                scale = 1; // window.devicePixelRatio || 1;
 
                 canvas.width = innerWidth * scale;
                 canvas.height = innerHeight * scale;
@@ -580,7 +580,7 @@
                 canvas.ontouchmove = canvas.ontouchstart = function(event) {
                     mouseX = event.targetTouches[0].pageX * scale;
                     mouseY = event.targetTouches[0].pageY * scale;
-                    followDist = 1;
+                    followDist = 0;
                     event.preventDefault();
                 };
 
@@ -606,7 +606,7 @@
                 };
 
                 canvas.onmousedown = function() {
-                    followDist = 1;
+                    followDist = 500;
                 };
 
                 canvas.onmouseup = function() {
