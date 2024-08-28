@@ -182,14 +182,3 @@ div {
         background-position: 0 400%;
     }
 }
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
