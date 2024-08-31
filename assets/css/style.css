@@ -137,16 +137,37 @@ div {
 }
 .neave-like {
     position: absolute;
+    width: 44px;
+    height: 44px;
+    z-index: 100;
     filter: drop-shadow(0 0 1px white);
-    transition: all 0.2s ease;
-    border-radius: 50%;
-    background-image: #00000000;
-    background-size: 100% 400%;
-    animation: rainb 8s linear infinite;
 }
-.neave-like:hover {
+.neave-like .works {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    will-change: opacity;
+    transition: opacity 0.3s ease-out;
+    background-image: linear-gradient(to bottom,#9cf,#f9c,#fc9,#9fc,#9cf);
+    animation: slide2 8s infinite linear;
+    pointer-events: none;
+    background-size: 100% 400%;
+}
+.neave-like:hover .works {
+    opacity: 1;
     filter: drop-shadow(0 0 3px white);
-    background-image: linear-gradient(to bottom, #9cf , #f9c , #fc9 , #9fc, #9cf);
+}
+.neave-like img {
+    position: absolute;
+    width: 44px;
+    top:0;
+    left:0;
+    box-sizing:content-box;
+    border-radius: 50%;
 }
 @keyframes appear {
     from {
@@ -177,7 +198,7 @@ div {
         rotate: 360deg;
     }
 }
-@keyframes rainb {
+@keyframes slide2 {
     to {
         background-position: 0 400%;
     }
