@@ -150,8 +150,7 @@ div {
     width:44px;
     height:44px;
     border-radius: 50%;
-    will-change: opacity;
-    transition: opacity 0.3s ease-out;
+    transition: 0.3s ease-in-out;
     background-image: linear-gradient(to bottom,#9cf,#f9c,#fc9,#9fc,#9cf);
     animation: slide2 8s infinite linear;
     pointer-events: none;
