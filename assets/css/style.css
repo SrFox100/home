@@ -158,14 +158,14 @@ div {
 }
 .neave-like:hover .works {
     opacity: 1;
-    filter: drop-shadow(0 0 3px white);
+    filter: drop-shadow(0 0 2px white);
 }
 .neave-like img {
     position: absolute;
     width: 44px;
     top:0;
     left:0;
-    box-sizing:content-box;
+    box-sizing:border-box;
     border-radius: 50%;
 }
 @keyframes appear {
