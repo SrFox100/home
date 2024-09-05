@@ -185,7 +185,7 @@
                 scale,
                 boundary = 25,
                 totalVertices = 80,
-                maxSpeed = 3,
+                maxSpeed = 2.5,
                 vertices = [],
                 r,
                 g,
@@ -200,7 +200,7 @@
                 circumcenters = [],
                 edgeVertices = [new Vertex(0, -5000), new Vertex(-10000, 5000), new Vertex(10000, 5000)],
                 maxIterations = 200,
-                followDist = 300,
+                followDist = 0,
                 stirDist = 100,
                 mouseX,
                 mouseY,
@@ -464,7 +464,7 @@
                     sa = Math.sin(angle);
 
                     if (d < followDist) {
-                        a = (1 - (d / followDist)) * canvas.width * 0.0005;
+                        a = (1 - (d / followDist)) * canvas.width * 0.001;
                         vx -= ca * (a + Math.random() * 8 - 4);
                         vy -= sa * (a + Math.random() * 8 - 4);
                     }
@@ -606,7 +606,7 @@
                 };
 
                 canvas.onmousedown = function() {
-                    followDist = 500;
+                    followDist = 0;
                 };
 
                 canvas.onmouseup = function() {
