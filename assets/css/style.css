@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: hsl(0, 0%, 20%);
+        background-color: hsl(0, 50%, 20%);
     }
     .theme {
         filter: invert(100%);
@@ -11,16 +11,28 @@
     a {
         color: hsl(0, 0%, 80%);
     }
+    #type {
+        color:#ffff00;
+    }
+    #type2 {
+        color: #00ff00;
+    }
 }
 @media (prefers-color-scheme: light) {
     body {
-        background-color: hsl(0,0%,80%);
+        background-color: hsl(120,50%,80%);
     }
     a {
-        color: hsl(0, 0%, 20%);
+        color: hsl(0, 50%, 50%);
     }
     h1,h2,h3,p,li {
         color: hsl(0, 0%, 0%);
+    }
+    #type {
+        color:#ff0000;
+    }
+    #type2 {
+        color: #ff0000;
     }
 }
 * {
@@ -40,6 +52,7 @@ html, body {
 body {
     text-align: center;
     text-size-adjust: none;
+    overflow: hidden;
 }
 h1,h2,h3,p {
     margin: 0;
@@ -125,7 +138,7 @@ div {
     width: 800px;
     border-radius: 32px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 0, 0, 0.4);
     animation: appear2 2s ease-in-out 1;
 }
 .theme {
@@ -201,4 +214,21 @@ div {
     to {
         background-position: 0 400%;
     }
+}
+#snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99;
 }
