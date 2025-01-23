@@ -25,15 +25,16 @@ html, body {
 }
 body {
     display: block;
-    background-color: hsl(0, 0%, 20%);
+    background-color: #333333;
     text-size-adjust: none;
 }
 header {
     display: block;
     position: relative;
-    background-image: repeating-linear-gradient(to bottom, #9cf, #f9c, #ec8, #7eb, #9cf);
-    background-size: 400% 400%;
-    animation: slide 30s linear infinite;
+    background-image: url(../images/favicon.svg);
+    background-color: black;
+    background-size: 50%;
+    animation: slide 32s linear infinite;
     width: 100%;
     height: 240px;
     top: 0;
@@ -104,7 +105,7 @@ li {
 }
 .high {
     color: white;
-    mix-blend-mode: normal;
+    mix-blend-mode: exclusion;
 }
 .proj {
     position: relative;
