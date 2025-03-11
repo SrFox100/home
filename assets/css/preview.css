@@ -1,6 +1,25 @@
 * {
     box-sizing: border-box;
 }
+::-webkit-scrollbar, ::-moz-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track, ::-moz-scrollbar-track {
+    background: #000000;
+    border: solid 1px #ffffff;
+}
+::-webkit-scrollbar-corner, ::-moz-scrollbar-corner {
+    background: #000000;
+    border: solid 1px #ffffff;
+}
+::-webkit-scrollbar-thumb, ::-moz-scrollbar-thumb {
+    background: #ffffff;
+    outline: solid 1px #ffffff;
+    border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:hover, ::-moz-scrollbar-thumb:hover {
+    background: #bbb;
+}
 :root {
     --red:#f00;
     --ora:#fa0;
@@ -31,8 +50,7 @@ body {
 header {
     display: block;
     position: relative;
-    background-image: url(../images/favicon.svg);
-    background-color: black;
+    background-color: rgb(77, 77, 77);
     background-size: 50%;
     animation: slide 32s linear infinite;
     width: 100%;
@@ -44,6 +62,9 @@ main {
     position: relative;
     display: block;
     height: auto;
+    left: 50%;
+    width: 50%;
+    max-width: 50%;
 }
 main ul{
     position: relative;
@@ -51,18 +72,18 @@ main ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
-    gap: 32px 500px;
     margin-top: 32px;
+    gap:32px 64px;
 }
 main li{
     display: inline-flex;
 }
 footer {
-    position: static;
+    position: relative;
     display: block;
     background-color: hsl(0, 0%, 12%);
     width: 100%;
-    bottom: 0%;
+    bottom: 0;
     padding-bottom: 6px;
 }
 h1,h2,p {
@@ -93,8 +114,16 @@ ul {
 li {
     list-style: none;
 }
+.smth {
+    position: absolute;
+    left:16px;
+    max-width: 300px;
+}
+.smth > p {
+    margin: 0;
+}
 .neave-like {
-    position: relative;
+    position:relative;
     width:100px;
     height: 100px;
     z-index: 100;
@@ -105,11 +134,10 @@ li {
 }
 .high {
     color: white;
-    mix-blend-mode: exclusion;
 }
 .proj {
     position: relative;
-    width: 316px;
+    width: 300px;
     height: 160px;
     background-color: black;
     border-radius: 12px;
@@ -119,7 +147,7 @@ li {
 .img img{
     position: absolute;
     width:100%;
-    height: 160px;
+    height: 100%;
     border-radius: 12px;
     aspect-ratio: 1;
     z-index: 9;
@@ -139,7 +167,7 @@ li {
     position: relative;
     top:0;
     margin: 0;
-    max-width: 200px;
+    max-width: 180px;
     user-select: none;
 }
 .txt p{
