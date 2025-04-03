@@ -165,9 +165,9 @@ div {
     border-radius: 50%;
     transition: 0.3s ease-in-out;
     background-image: linear-gradient(to bottom,#9cf,#f9c,#fc9,#9fc,#9cf);
-    animation: slide2 8s infinite linear;
+    animation: slide2 16s infinite linear;
     pointer-events: none;
-    background-size: 100% 400%;
+    background-size: 100% 800%;
 }
 .neave-like:hover .works {
     opacity: 1;
@@ -212,7 +212,7 @@ div {
 }
 @keyframes slide2 {
     to {
-        background-position: 0 400%;
+        background-position: 0 800%;
     }
 }
 #snow {
