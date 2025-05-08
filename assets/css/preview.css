@@ -94,15 +94,16 @@ h1,h2,p {
 }
 a {
     text-decoration: none;
-    color:white;
-    filter: drop-shadow(0 0 2px white);
+    color:#fff;
+    filter: drop-shadow(0 0 2px #fff);
     transition: 0.2s ease-in-out;
 }
 a:hover {
-    filter: drop-shadow(0 0 8px white);
+    color: #ffeda0;
+    filter: drop-shadow(0 0 4px #fff);
 }
 h1 {
-    filter: drop-shadow(0 0 2px white);
+    filter: drop-shadow(0 0 4px #fff);
     font-size: 32px;
 }
 ul {
