@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="icon" href="./assets/images/favicon.svg">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="icon" href="../assets/images/NeaveLike_logo.svg">
         <title>Pixel dust.</title>
     </head>
     <body>
@@ -14,8 +14,8 @@
                 padding: 0;
                 color: #fff;
                 background-color: #000;
+                overflow: hidden;
             }
-
             canvas {
                 display: none;
                 -webkit-tap-highlight-color: transparent;
@@ -25,8 +25,9 @@
                 height: 100%;
             }
         </style>
-        <a href="./index.html">
-            <img src="./assets/images/favicon.svg" style="width: 44px; margin-bottom: -1px; top: 36px; right: 36px; z-index: 10;" class="theme">
+        <a href="/index.html" class="icon mini" style="top:16px;left:16px;">
+            <div class="visual"></div>
+            <img src="../assets/images/NeaveLike_logo.svg" draggable="false">
         </a>
         <canvas></canvas>
         <script>

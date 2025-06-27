@@ -1,1 +1,73 @@
-<svg id="eeb7co9uwT11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" project-id="ba2c712f10c4497aae547155d778591d" export-id="3fc4a562d279417492726a979851cd74" cached="false" width="512" height="512"><ellipse rx="132.95588" ry="132.900044" transform="matrix(1.84 0 0 1.84 256 256)" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/><polygon points="-0.000001,-125.254218 62.627109,-125.254218 -0.000001,-62.627109 62.627109,0 62.627109,62.627109 62.627109,125.254218 -0.000001,125.254218 -62.627109,125.254218 0,62.627109 -62.627109,0 -62.627109,-62.627109 -62.627109,-125.254218 -0.000001,-125.254218" transform="matrix(1.4 0 0 0.8 256.000001 256)" fill="#fff" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="eeb7co9uwT11"
+   viewBox="0 0 512 512"
+   shape-rendering="geometricPrecision"
+   text-rendering="geometricPrecision"
+   project-id="ba2c712f10c4497aae547155d778591d"
+   export-id="3fc4a562d279417492726a979851cd74"
+   cached="false"
+   width="512"
+   height="512"
+   version="1.1"
+   sodipodi:docname="NeaveLike_logo.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="408.00061"
+     inkscape:cy="62.932503"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="eeb7co9uwT11" />
+  <ellipse
+     rx="132.95588"
+     ry="132.900044"
+     transform="matrix(1.84 0 0 1.84 256 256)"
+     fill="none"
+     stroke="#fff"
+     stroke-width="12"
+     stroke-linecap="round"
+     id="ellipse1"
+     style="stroke:#ffffff;stroke-opacity:1;stroke-linecap:square" />
+  <path
+     id="polygon1"
+     style="stroke:#ffffff;stroke-width:12;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+     transform="matrix(1.4,0,0,0.8,256,256)"
+     d="M 62.627109,-125.25422 -10e-7,-62.627109 70.960867,0 V 62.627109 125.25422 H -10e-7 -62.627109 L 0,62.627109 -71.213406,0 V -62.627109 -125.25422 H -10e-7 Z"
+     sodipodi:nodetypes="ccccccccccccc" />
+</svg>

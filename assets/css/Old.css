@@ -1,0 +1,234 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: hsl(0, 0%, 20%);
+    }
+    .theme {
+        filter: invert(100%);
+    }
+    h1,h2,h3,p,li {
+        color: hsl(0, 0%, 100%);
+    }
+    a {
+        color: hsl(0, 0%, 80%);
+    }
+    #type {
+        color:#ffffff;
+    }
+    #type2 {
+        color: #ffffff;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: hsl(120,50%,80%);
+    }
+    a {
+        color: hsl(0, 0%, 50%);
+    }
+    h1,h2,h3,p,li {
+        color: hsl(0, 0%, 0%);
+    }
+    #type {
+        color:#000000;
+    }
+    #type2 {
+        color: #000000;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    image-rendering: pixelated;
+}
+::selection {
+    background-color: rgba(0, 0, 0, 0);
+    color: gray;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    text-size-adjust: none;
+    overflow: hidden;
+}
+h1,h2,h3,p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    transition: 0.1s all;
+}
+a img {
+    border: 0;
+    outline: 0;
+}
+a:hover {
+    color: rgb(100, 100, 100);
+}
+a:active {
+    color: rgb(70, 70, 70);
+}
+img {
+    border: none;
+}
+div {
+    margin: 0;
+}
+.main {
+    position: absolute;
+    top:6%;
+    left: 4%;
+    z-index: 10;
+    max-width: 320px;
+}
+.logo {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    z-index: 15;
+    animation: appear 2s ease-out;
+}
+.undertitle {
+    position: relative;
+    bottom: -32px;
+    text-align: start;
+}
+.black-box {
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    background-color: black;
+    z-index: 12;
+    border-radius: 24px;
+}
+.national {
+    width: 100%;
+    height: 24px;
+    background-image: url(../images/flags.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: slide 180s linear infinite;
+}
+.copyright {
+    position: fixed;
+    bottom:0;
+    left:0;
+    margin: 16px;
+    font-size: 20px;
+}
+.menu {
+    position: absolute;
+    z-index: 1;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    border-radius: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: appear2 2s ease-in-out 1;
+}
+.theme {
+    position: fixed;
+    animation: spin 4s linear infinite reverse;
+}
+.important {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.neave-like {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    z-index: 100;
+    filter: drop-shadow(0 0 1px white);
+}
+.neave-like .works {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom,#9cf,#f9c,#fc9,#9fc,#9cf);
+    animation: slide2 16s infinite linear;
+    pointer-events: none;
+    background-size: 100% 800%;
+}
+.neave-like:hover .works {
+    opacity: 1;
+    filter: drop-shadow(0 0 2px white);
+}
+.neave-like img {
+    position: absolute;
+    width: 44px;
+    top:0;
+    left:0;
+    box-sizing:border-box;
+    border-radius: 50%;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-36px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    to {
+        background-position: var(--lenght) 0;
+    }
+}
+@keyframes appear2 {
+    from {
+        scale: 1 0;
+        z-index: 0;
+    }
+    to {
+        scale: 1 1;
+        z-index: 1;
+    }
+}
+@keyframes spin {
+    to {
+        rotate: 360deg;
+    }
+}
+@keyframes slide2 {
+    to {
+        background-position: 0 800%;
+    }
+}
+#snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99;
+}
