@@ -126,18 +126,19 @@ section.projects {
     position: relative;
 }
 .projects__list {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px 10px;
-    max-width: 1080px;
+    flex-flow: row initial;
+    gap: 10px;
 }
 .project {
     position: relative;
     width: 36px;
     height: 36px;
     background: var(--ProjBg);
-    transition: 0.25s width ease-in-out;
+    transition: 0.25s width ease;
     z-index: 1;
+    overflow: hidden;
 }
 a:hover > .project {
     text-shadow: 2px 1px 4px var(--TextColor);
@@ -214,7 +215,7 @@ a:hover > .project {
     --TextColor:var(--white);
 }
 .wobble {
-    --ProjBg:repeating-linear-gradient(to bottom, #00ccff, #00ffcc, #ffff00, #ff00cc, #cc00ff);
+    --ProjBg:url(/assets/images/wobble_neave.png);
     --TextColor:var(--black);
 }
 .voronoi {
