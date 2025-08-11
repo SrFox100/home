@@ -209,7 +209,7 @@ a:hover > .project {
     --TextColor:var(--white);
 }
 .wobble {
-    --ProjBg:url(/assets/images/wobble_neave.png);
+    --ProjBg:url(../images/wobble_neave.png);
     --TextColor:var(--black);
 }
 .voronoi {
