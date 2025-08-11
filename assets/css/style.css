@@ -127,24 +127,18 @@ section.projects {
 }
 .projects__list {
     position: relative;
-    display: flex;
-    flex-flow: row initial;
-    gap: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 .project {
     position: relative;
-    width: 36px;
+    width: 600px;
     height: 36px;
     background: var(--ProjBg);
-    transition: 0.25s width ease;
     z-index: 1;
     overflow: hidden;
-}
-a:hover > .project {
-    text-shadow: 2px 1px 4px var(--TextColor);
-}
-.project:hover {
-    width: 600px;
 }
 .project img {
     width: 36px;
@@ -160,16 +154,16 @@ a:hover > .project {
     user-select: none;
     max-width: 600px;
     color:var(--TextColor);
+    transition: 0.2s all;
 }
-.projects__text > h1, .projects__text > p {
-    font-size: 0px;
-    transition: 0.25s all;
+a:hover > .project {
+    text-shadow: 2px 1px 4px var(--TextColor)
 }
-.project:hover > .projects__text h1 {
+.projects__text > h1 {
+    font-size: 16px;
+}
+.projects__text > p {
     font-size: 12px;
-}
-.project:hover > .projects__text p {
-    font-size: 10px;
 }
 /*Projects style*/
 .bossfights {
